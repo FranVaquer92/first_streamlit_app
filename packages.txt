@@ -1,2 +1,0 @@
-pip install pipreqs
-pipreqs /Users/franvaquer92/Documents/GitHub/first_streamlit_app
