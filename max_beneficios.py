@@ -20,9 +20,9 @@ d = s1.selectbox(
 "¿Cuantas campañas has realizado?: ",
 rango_camp)
 d = int(d)
-N = s2.number_input("¿A cuantos clientes vas a lanzar la próxima campaña?: ")
+N = s2.number_input("¿A cuantos clientes vas a lanzar la próxima campaña?: ", value = 1.0)
 N = int(N)
-producto = s3.number_input("Introduce el precio del producto: ")
+producto = s3.number_input("Introduce el precio del producto: ", value = 1.0)
 producto = float(producto)
 
 """
