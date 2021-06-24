@@ -11,6 +11,8 @@ rango_camp = (2,3,4,5,6,7,8,9)
 """
 # Maximización de Beneficios mediante la selección de la estrategia de Marketing con mayor ratio de conversión
 #### Utilización del algoritmo Thompson Sampling
+
+
 """
 
 s1, s2, s3 = st.beta_columns(3)
