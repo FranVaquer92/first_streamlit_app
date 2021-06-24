@@ -10,23 +10,23 @@ rango_camp = (2,3,4,5,6,7,8,9)
 
 """
 # Maximización de Beneficios
-#### Campañas de Marketing
+#### estrategias de Marketing
 """
 
 s1, s2, s3 = st.beta_columns(3)
 
 
 d = s1.selectbox(
-"¿Cuantas campañas has realizado?: ",
+"¿Cuantas estrategias has realizado?: ",
 rango_camp)
 d = int(d)
-N = s2.number_input("¿A cuantos clientes vas a lanzar la próxima campaña?: ", value = 100)
+N = s2.number_input("¿A cuantos contactos vas a lanzar la próxima campaña?: ", value = 100)
 N = int(N)
 producto = s3.number_input("Introduce el precio del producto: ", value = 1.0)
 producto = float(producto)
 
 """
-#### Introduce los datos de las campañas anteriores:
+#### Introduce los datos de las estrategias anteriores:
 """
 
 c1, c2, c3 = st.beta_columns(3)
@@ -36,17 +36,17 @@ defect_value = 1
 
 if d == 2:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     b1, b2 = st.beta_columns(2)
-    N0= b1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= b2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
+    N0= b1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= b2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     b1, b2 = st.beta_columns(2)
-    C0= b1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= b2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
+    C0= b1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= b2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     C0 = int(C0)
@@ -54,21 +54,21 @@ if d == 2:
     conversion_rates = [C0/N0, C1/N1]
 elif d == 3:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c3.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
+    C0= c1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c3.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -78,23 +78,23 @@ elif d == 3:
     conversion_rates = [C0/N0, C1/N1, C2/N2]
 elif d == 4:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= b1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= b2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= b1.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= b2.number_input("Número de clientes de la campaña 3: ", value = defect_value)
+    N0= b1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= b2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= b1.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= b2.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= b1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= b2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= b1.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= b2.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
+    C0= b1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= b2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= b1.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= b2.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -106,25 +106,25 @@ elif d == 4:
     conversion_rates = [C0/N0, C1/N1, C2/N2, C3/N3]
 elif d == 5:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= c1.number_input("Número de clientes de la campaña 3: ", value = defect_value)
-    N4= c2.number_input("Número de clientes de la campaña 4: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= c1.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
+    N4= c2.number_input("Número de contactos con la estrategia 4: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c3.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c1.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c2.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= c3.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
-    C4= b1.number_input("Número de conversiones de la campaña 4: ", value = defect_value)
+    C0= c3.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c1.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c2.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= c3.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
+    C4= b1.number_input("Número de conversiones con la estrategia 4: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -138,27 +138,27 @@ elif d == 5:
     conversion_rates = [C0/N0, C1/N1, C2/N2, C3/N3, C4/N4]
 elif d == 6:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= c1.number_input("Número de clientes de la campaña 3: ", value = defect_value)
-    N4= c2.number_input("Número de clientes de la campaña 4: ", value = defect_value)
-    N5= c3.number_input("Número de clientes de la campaña 5: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= c1.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
+    N4= c2.number_input("Número de contactos con la estrategia 4: ", value = defect_value)
+    N5= c3.number_input("Número de contactos con la estrategia 5: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c3.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= c1.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
-    C4= c2.number_input("Número de conversiones de la campaña 4: ", value = defect_value)
-    C5= c3.number_input("Número de conversiones de la campaña 5: ", value = defect_value)
+    C0= c1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c3.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= c1.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
+    C4= c2.number_input("Número de conversiones con la estrategia 4: ", value = defect_value)
+    C5= c3.number_input("Número de conversiones con la estrategia 5: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -174,29 +174,29 @@ elif d == 6:
     conversion_rates = [C0/N0, C1/N1, C2/N2, C3/N3, C4/N4, C5/N5]
 elif d == 7:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= c1.number_input("Número de clientes de la campaña 3: ", value = defect_value)
-    N4= c2.number_input("Número de clientes de la campaña 4: ", value = defect_value)
-    N5= c3.number_input("Número de clientes de la campaña 5: ", value = defect_value)
-    N6= b1.number_input("Número de clientes de la campaña 6: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= c1.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
+    N4= c2.number_input("Número de contactos con la estrategia 4: ", value = defect_value)
+    N5= c3.number_input("Número de contactos con la estrategia 5: ", value = defect_value)
+    N6= b1.number_input("Número de contactos con la estrategia 6: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c3.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= c1.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
-    C4= c2.number_input("Número de conversiones de la campaña 4: ", value = defect_value)
-    C5= c3.number_input("Número de conversiones de la campaña 5: ", value = defect_value)
-    C6= b1.number_input("Número de conversiones de la campaña 6: ", value = defect_value)
+    C0= c1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c3.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= c1.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
+    C4= c2.number_input("Número de conversiones con la estrategia 4: ", value = defect_value)
+    C5= c3.number_input("Número de conversiones con la estrategia 5: ", value = defect_value)
+    C6= b1.number_input("Número de conversiones con la estrategia 6: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -214,31 +214,31 @@ elif d == 7:
     conversion_rates = [C0/N0, C1/N1, C2/N2, C3/N3, C4/N4, C5/N5, C6/N6]
 elif d == 8:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= c1.number_input("Número de clientes de la campaña 3: ", value = defect_value)
-    N4= c2.number_input("Número de clientes de la campaña 4: ", value = defect_value)
-    N5= c3.number_input("Número de clientes de la campaña 5: ", value = defect_value)
-    N6= c1.number_input("Número de clientes de la campaña 6: ", value = defect_value)
-    N7= c2.number_input("Número de clientes de la campaña 7: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= c1.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
+    N4= c2.number_input("Número de contactos con la estrategia 4: ", value = defect_value)
+    N5= c3.number_input("Número de contactos con la estrategia 5: ", value = defect_value)
+    N6= c1.number_input("Número de contactos con la estrategia 6: ", value = defect_value)
+    N7= c2.number_input("Número de contactos con la estrategia 7: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c3.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c1.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c2.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= c3.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
-    C4= c1.number_input("Número de conversiones de la campaña 4: ", value = defect_value)
-    C5= c2.number_input("Número de conversiones de la campaña 5: ", value = defect_value)
-    C6= c3.number_input("Número de conversiones de la campaña 6: ", value = defect_value)
-    C7= b1.number_input("Número de conversiones de la campaña 7: ", value = defect_value)
+    C0= c3.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c1.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c2.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= c3.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
+    C4= c1.number_input("Número de conversiones con la estrategia 4: ", value = defect_value)
+    C5= c2.number_input("Número de conversiones con la estrategia 5: ", value = defect_value)
+    C6= c3.number_input("Número de conversiones con la estrategia 6: ", value = defect_value)
+    C7= b1.number_input("Número de conversiones con la estrategia 7: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -258,33 +258,33 @@ elif d == 8:
     conversion_rates = [C0/N0, C1/N1, C2/N2, C3/N3, C4/N4, C5/N5, C6/N6, C7/N7]
 elif d == 9:
     """
-    #### Número de clientes:
+    #### Número de contactos:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    N0= c1.number_input("Número de clientes de la campaña 0: ", value = defect_value)
-    N1= c2.number_input("Número de clientes de la campaña 1: ", value = defect_value)
-    N2= c3.number_input("Número de clientes de la campaña 2: ", value = defect_value)
-    N3= c1.number_input("Número de clientes de la campaña 3: ", value = defect_value)
-    N4= c2.number_input("Número de clientes de la campaña 4: ", value = defect_value)
-    N5= c3.number_input("Número de clientes de la campaña 5: ", value = defect_value)
-    N6= c1.number_input("Número de clientes de la campaña 6: ", value = defect_value)
-    N7= c2.number_input("Número de clientes de la campaña 7: ", value = defect_value)
-    N8= c3.number_input("Número de clientes de la campaña 8: ", value = defect_value)
+    N0= c1.number_input("Número de contactos con la estrategia 0: ", value = defect_value)
+    N1= c2.number_input("Número de contactos con la estrategia 1: ", value = defect_value)
+    N2= c3.number_input("Número de contactos con la estrategia 2: ", value = defect_value)
+    N3= c1.number_input("Número de contactos con la estrategia 3: ", value = defect_value)
+    N4= c2.number_input("Número de contactos con la estrategia 4: ", value = defect_value)
+    N5= c3.number_input("Número de contactos con la estrategia 5: ", value = defect_value)
+    N6= c1.number_input("Número de contactos con la estrategia 6: ", value = defect_value)
+    N7= c2.number_input("Número de contactos con la estrategia 7: ", value = defect_value)
+    N8= c3.number_input("Número de contactos con la estrategia 8: ", value = defect_value)
     """
     #### Número de conversiones:
     """
     c1, c2, c3 = st.beta_columns(3)
     b1, b2 = st.beta_columns(2)
-    C0= c1.number_input("Número de conversiones de la campaña 0: ", value = defect_value)
-    C1= c2.number_input("Número de conversiones de la campaña 1: ", value = defect_value)
-    C2= c3.number_input("Número de conversiones de la campaña 2: ", value = defect_value)
-    C3= c1.number_input("Número de conversiones de la campaña 3: ", value = defect_value)
-    C4= c2.number_input("Número de conversiones de la campaña 4: ", value = defect_value)
-    C5= c3.number_input("Número de conversiones de la campaña 5: ", value = defect_value)
-    C6= c1.number_input("Número de conversiones de la campaña 6: ", value = defect_value)
-    C7= c2.number_input("Número de conversiones de la campaña 7: ", value = defect_value)
-    C8= c3.number_input("Número de conversiones de la campaña 8: ", value = defect_value)
+    C0= c1.number_input("Número de conversiones con la estrategia 0: ", value = defect_value)
+    C1= c2.number_input("Número de conversiones con la estrategia 1: ", value = defect_value)
+    C2= c3.number_input("Número de conversiones con la estrategia 2: ", value = defect_value)
+    C3= c1.number_input("Número de conversiones con la estrategia 3: ", value = defect_value)
+    C4= c2.number_input("Número de conversiones con la estrategia 4: ", value = defect_value)
+    C5= c3.number_input("Número de conversiones con la estrategia 5: ", value = defect_value)
+    C6= c1.number_input("Número de conversiones con la estrategia 6: ", value = defect_value)
+    C7= c2.number_input("Número de conversiones con la estrategia 7: ", value = defect_value)
+    C8= c3.number_input("Número de conversiones con la estrategia 8: ", value = defect_value)
     N0 = int(N0)
     N1 = int(N1)
     N2 = int(N2)
@@ -365,7 +365,7 @@ relative_return = ((total_reward_ts - total_reward_rs) / total_reward_rs) * prod
 """
 st.write('Rendimiento absoluto: {:.2f} €'.format(absolute_return))
 st.write('Rendimiento relativo: {:.2f} %'.format(relative_return))
-#st.write('Campaña seleccionada más veces con la estrategia de Thompson: ', np.max(strategies_selected_ts))
+#st.write('estrategia seleccionada más veces con la estrategia de Thompson: ', np.max(strategies_selected_ts))
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 b1, b2 = st.beta_columns(2)
